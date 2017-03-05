@@ -1,2 +1,4 @@
 source https://nuget.org/api/v2
+nuget DotLiquid
 nuget Suave
+nuget Suave.DotLiquid
