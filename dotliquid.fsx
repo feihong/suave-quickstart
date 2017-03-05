@@ -10,7 +10,8 @@ let model = { Name="Sarah"; Students=["Peter"; "Linda"; "Mariah"]}
 
 DotLiquid.setTemplatesDir(__SOURCE_DIRECTORY__)
 
-let app = choose [
-    path "/" >=> DotLiquid.page ("template.html") model
-]
+let app = 
+    choose [ 
+        path "/" >=> DotLiquid.page ("template.html") model 
+    ]
 startWebServer defaultConfig app
